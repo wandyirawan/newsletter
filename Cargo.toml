@@ -1,0 +1,18 @@
+[package]
+name = "newsletter"
+version = "0.1.0"
+authors = ["wandy irawan <wandy.irawan17@gmail.com>"]
+edition = "2021"
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+path = "src/main.rs"
+name = "newsletter"
+
+[dependencies]
+actix-web = "4"
+cargo-expand = "1.0.73"
+reqwest = "0.11.22"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
